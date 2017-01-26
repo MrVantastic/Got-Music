@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Got Music?</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Got Music?</h1>
+    </div>
+    <div>
+      <h3>Check to see if a certain song is on Spotify, SoundCloud, Apple Music, or all three!</h3>
+    </div>
+
+    <form id = "searchForm">
+      Search<br>
+      <input type="text" id="Song"name="SongName" placeholder="Type a Song Title, Artist, or Album">
+      <br>
+      <input type="button" onclick= "search(document.getElementById('Song').value)" id="Search" value="Search" />
+    </form>
+
+    <div class="results">
+    <h3>Spotify Results</h3>
+      <ul id="spotifyResults">
+      <ul>
+    </div>
+
+    <div class="results">
+    <h3>SoundCloud Results</h3>
+      <ul id="soundCloudResults">
+      <ul>
+    </div>
+
+    <div class= "results">
+    <h3>Apple Music Results</h3>
+      <ul id="appleMusicResults">
+      <ul>
+    </div>
+    <footer id="footer">
+      this website was created by Jeffrey Van | jv363@cornell.edu
+    </footer>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+  </body>
+</html>
