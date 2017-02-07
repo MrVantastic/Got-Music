@@ -7,15 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
-    <div>
+    <div id="title">
       <h1>Got Music?</h1>
     </div>
-    <div>
-      <h3>Check to see if a certain song is on Spotify, SoundCloud, Apple Music, or all three!</h3>
+    <div id = "titleDescription">
+      <h3>Check to see if a certain song is on Spotify, Apple Music, or both!</h3>
     </div>
 
     <form id = "searchForm">
-      Search<br>
+      <br>
       <input type="text" id="Song"name="SongName" placeholder="Type a Song Title, Artist, or Album">
       <br>
       <input type="button" onclick= "search(document.getElementById('Song').value)" id="Search" value="Search" />
@@ -27,11 +27,11 @@
       <ul>
     </div>
 
-    <div class="results">
+    <!-- <div class="results">
     <h3>SoundCloud Results</h3>
       <ul id="soundCloudResults">
       <ul>
-    </div>
+    </div> -->
 
     <div class= "results">
     <h3>Apple Music Results</h3>
